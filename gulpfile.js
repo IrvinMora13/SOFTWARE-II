@@ -17,9 +17,6 @@ export function css(done) {
         .pipe( sass().on('error', sass.logError) )
         .pipe( dest('build/css'))
 
-        src('src/scss/loginPage.scss')
-        .pipe( sass().on('error', sass.logError) )
-        .pipe( dest('build/css'))
     done()
 }
 
