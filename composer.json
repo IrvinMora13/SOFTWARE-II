@@ -1,0 +1,16 @@
+{
+    "name": "irbug/software-ii",
+    "type": "project",
+    "authors": [
+        {
+            "name": "IrvinMora13",
+            "email": "irvinmora139@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./classes"
+        }
+    }
+}

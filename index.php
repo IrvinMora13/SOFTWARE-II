@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ST-UACH</title>
-    <link rel="stylesheet" href="./build/css/app.css">
-</head>
+
 
 <?php
+
+ require './scripts/funciones.php'; 
+ incluirComponent('head');
+
 // Conectar a la base de datos
 $servername = "localhost";
 $username = "root";
@@ -46,13 +43,9 @@ $conn->close();
 ?>
 
 <body>
+  <div class="container">
     <h2>Iniciar Sesión</h2>
-    <?php if (isset($mensaje)) { ?>
-      <div class="alert <?php echo $tipo_mensaje; ?>">
-        <?php echo $mensaje; ?>
-      </div>
-    <?php } ?>
-    <form action="index.php" method="post">
+    <form action="login.php" method="post">
       <div class="form-group">
         <label for="username">Nombre de usuario:</label>
         <input type="text" id="username" name="username" class="form-control" required>
@@ -64,7 +57,9 @@ $conn->close();
       <div class="form-group">
         <input type="submit" value="Iniciar Sesión" class="btn">
       </div>
+      <p>¿No tienes una cuenta? <a href="register.html">Regístrate</a></p>
     </form>
-  </body>
+  </div>
+</body>
 
 </html>
