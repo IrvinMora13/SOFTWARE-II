@@ -9,7 +9,7 @@
   $servername = "localhost";
   $username = "root";
   $password = "24282213Mys.";
-  $dbname = "st-uach";
+  $dbname = "stuach";
 
   $conn = conectDB($servername, $username, $password,$dbname);
 
