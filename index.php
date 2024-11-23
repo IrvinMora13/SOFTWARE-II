@@ -4,20 +4,71 @@
   require './includes/funciones.php';
   require './includes/config/database.php';
 
-  conectarDB();
-
+  $db = conectarDB();
+  
   incluirTemplate('header');
+  
+  $username = '';
+  $password = '111111';
+  $password_hash = password_hash($password, PASSWORD_BCRYPT);
+
+
+  $errores = [];
+
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = filter_var($_POST['username'], FILTER_VALIDATE_INT);
+    $password = $_POST['password'];
+
+
+    if (!$username) {
+      $errores[] = "Matricula incorrecta";
+    }
+
+    if (!$password) {
+      $errores[] = "Contraseña incorrecta";
+    }
+
+
+    if (empty($errores)) {
+      
+      $query = "SELECT * FROM USUARIOS WHERE matricula = '$username'";
+      $resultado = mysqli_query($db, $query);
+      
+      if ($resultado ->num_rows) {
+        $usuario = mysqli_fetch_assoc($resultado);
+
+        $auth = password_verify($password, $usuario['contra']);
+        echo $auth;
+        if ($auth) {
+          echo "Todo bien";
+        } else {
+          $errores[] = "El password es incorrecto";
+        }
+      } else {
+        $errores[] = "El usuario no existe";
+      }
+    }
+  }
+
+  
 ?>
 
 <body>
   <div class="container">
     <h2>Iniciar Sesión</h2>
+
+    <?php foreach($errores as $error):?>
+    <div class="alerta error">
+      <?php echo $error; ?>
+    </div>
+    <?php endforeach; ?>
+
     <form action="./index.php" method="POST">
       <fieldset>
         <legend>Iniciar sesion</legend>
         <div class="form-group">
           <label for="username">Matricula:</label>
-          <input type="number" maxlength="6" id="username" name="username" class="form-control" placeholder="Matricula sin a" required>
+          <input type="text" id="username" name="username" class="form-control" placeholder="Matricula sin a" required>
         </div>
         <div class="form-group">
           <label for="password">Contraseña:</label>
