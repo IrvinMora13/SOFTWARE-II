@@ -174,3 +174,30 @@ header .right img {
 .dropdown-menu a:hover {
     background-color: rgba(55, 30, 70, 0.1);
 }
+
+.datetime-buttons {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.date-picker, .time-picker {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.update-datetime {
+    padding: 5px 15px;
+    background-color: rgb(55, 30, 70);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-datetime:hover {
+    background-color: #4b004b;
+}
