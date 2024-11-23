@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(55, 30, 70); /* Morado */
+    background-color: rgb(55, 30, 70); 
     color: white;
     padding: 15px;
     font-size: 20px;
@@ -41,7 +41,7 @@ header .right {
 
 .options a {
     text-decoration: none;
-    color: rgb(55, 30, 70); /* Color morado */
+    color: rgb(55, 30, 70); 
     font-size: 18px;
     font-weight: bold;
     display: block;
