@@ -145,10 +145,10 @@ header .icon {
 }
 
 .dropdown-menu {
-    display: none; /* Escondido por defecto */
+    display: none; 
     position: absolute;
-    top: 50px; /* Ajustar según el header */
-    right: 20px;
+    top: 50px; 
+    left: 20px;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;

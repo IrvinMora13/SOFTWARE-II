@@ -8,9 +8,8 @@
 </head>
 <body>
     <header>
-        <div class="left">ST-UACH</div>
-        <div class="right">
-            Nombre
+        <div class="left">
+            ST-UACH
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <div class="dropdown-menu" id="menu">
                 <a href="#">Solicitar tutoría</a>
@@ -18,6 +17,7 @@
                 <a href="#">Evaluar sesión de tutoría</a>
             </div>
         </div>
+        <div class="right">Nombre</div>
     </header>
 
     <div class="content">
