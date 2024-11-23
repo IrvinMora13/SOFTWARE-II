@@ -22,7 +22,7 @@
 <body>
     <header>
         <?php if($auth): ?>
-            <a href="cerrar_sesion.php">Cerrar Sesion</a>
+            <a href="/cerrar_sesion.php">Cerrar Sesion</a>
         <?php endif ?>
     </header>
 

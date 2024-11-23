@@ -3,3 +3,208 @@
 @import 'base/mixins';
 @import 'base/globales';
 @import 'base/utilidades';
+
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(55, 30, 70); 
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+header .left {
+    font-weight: bold;
+}
+
+.left t1{
+    margin-left: 20px;
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+}
+
+header .right img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Main content styling */
+.content {
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px; 
+    width: 100%;
+    max-width: 1200px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%; 
+    max-width: 600px; 
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    color: rgb(55, 30, 70); 
+}
+
+.form-container .subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-container textarea {
+    resize: none;
+    height: 150px; 
+}
+
+.form-container .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-container .cancel {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-container .submit {
+    background-color: rgb(55, 30, 70); 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-container .cancel:hover {
+    background-color: #aaa;
+}
+
+.form-container .submit:hover {
+    background-color: #4b004b;
+}
+
+/* Info box */
+.info-box {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%; 
+    max-width: 300px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.menu-icon {
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 50px; 
+    left: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(55, 30, 70, 0.1);
+}
+
+.datetime-buttons {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.date-picker, .time-picker {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.update-datetime {
+    padding: 5px 15px;
+    background-color: rgb(55, 30, 70);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-datetime:hover {
+    background-color: #4b004b;
+}
