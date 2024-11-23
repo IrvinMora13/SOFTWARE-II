@@ -1,9 +1,12 @@
 <?php
+    require '../includes/funciones.php';
+    incluirTemplate('header');
 
-require './scripts/funciones.php';
-incluirComponent('head');
 ?>
-
-    <main class="contenedor">
+    <main class='contenedor'>
         <h1>Administrador</h1>
     </main>
+
+<?php
+  incluirTemplate('footer');
+?>

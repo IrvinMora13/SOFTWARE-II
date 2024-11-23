@@ -1,9 +1,12 @@
 
 
 <?php
- require 'includes/funciones.php';
+  require './includes/funciones.php';
+  require './includes/config/database.php';
 
- incluirTemplate('header');
+  conectarDB();
+
+  incluirTemplate('header');
 ?>
 
 <body>
@@ -26,6 +29,9 @@
       </fieldset>
     </form>
   </div>
+  <?php
+  incluirTemplate('footer');
+  ?>
 </body>
 
 </html>
