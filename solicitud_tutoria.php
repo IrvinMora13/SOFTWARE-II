@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cambio de Tutor</title>
-    <link rel="stylesheet" href="src/scss/cambio_tut.css">
+    <title>Solicitud de Tutoría</title>
+    <link rel="stylesheet" href="src/scss/solicitud_tut.css">
 </head>
 <body>
     <header>
@@ -12,7 +12,7 @@
             ST-UACH
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <div class="dropdown-menu" id="menu">
-                <a href="solicitud_tutoria.php">Solicitar tutoría</a>
+                <a href="cambio_tutor.php">Cambio de tutor</a>
                 <a href="#">Agenda</a>
                 <a href="#">Evaluar sesión de tutoría</a>
             </div>
@@ -25,27 +25,27 @@
 
     <div class="content">
         <div class="form-container">
-            <h2>Cambio de tutor</h2>
-            <p class="subtitle">Actualizar información</p>
+            <h2>Solicitud de tutoría</h2>
+            <p class="subtitle">Rellena el formulario</p>
             <form>
-                <label for="tutor-actual">Nombre del tutor actual</label>
-                <input type="text" id="tutor-actual" name="tutor-actual">
+                <label for="motivo-tutoria">Motivo de la tutoría</label>
+                <textarea id="motivo-tutoria" name="motivo-tutoria"></textarea>
 
-                <label for="nuevo-tutor">Nuevo tutor</label>
-                <input type="text" id="nuevo-tutor" name="nuevo-tutor">
+                <label for="horario">Horario</label>
+                <input type="text" id="horario" name="horario">
 
-                <label for="razon-cambio">Razón del cambio</label>
-                <textarea id="razon-cambio" name="razon-cambio"></textarea>
+                <label for="tipo-tutoria">Tipo de tutoría</label>
+                <input type="text" id="tipo-tutoria" name="tipo-tutoria">
 
                 <div class="buttons">
                     <button type="button" class="cancel" onclick="window.location.href='alumnos.php'">Cancelar</button>
-                    <button type="submit" class="submit">Enviar</button>
+                    <button type="submit" class="submit">Enviar solicitud</button>
                 </div>
             </form>
         </div>
 
         <div class="info-box">
-            <p>El cambio de tutor no es seguro<br>ya que dependerá de la disponibilidad del tutor</p>
+            <p>La solicitud de tutoría será enviada y estará a la espera de confirmación del tutor.</p>
         </div>
     </div>
     <script>
