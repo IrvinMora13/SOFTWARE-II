@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cambio de Disponibilidad de horario</title>
-    <link rel="stylesheet" href="src/scss/cambio_tut.css">
+    <link rel="stylesheet" href="./build/css/app.css">
 </head>
 <body>
     <header>
@@ -12,8 +12,8 @@
         <t1>ST-UACH</t1>
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <div class="dropdown-menu" id="menu">
-                <a href="revision_evaluaciones.php">Revisión de evaluaciones</a>
-                <a href="agenda_tutor.php">Agenda</a>
+                <a href="./tutor/propiedades/revision_evaluaciones.php">Revisión de evaluaciones</a>
+                <a href="./tutor/propiedades/agenda_tutor.php">Agenda</a>
                 <a href="#">Evaluar sesión de tutoría</a>
             </div>
         </div>
@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="buttons">
-                    <button type="button" class="cancel" onclick="window.location.href='tutores.php'">Cancelar</button>
+                    <button type="button" class="cancel" onclick="window.location.href='./tutor/index.php'">Cancelar</button>
                     <button type="submit" class="submit">Enviar solicitud</button>
                 </div>
             </form>

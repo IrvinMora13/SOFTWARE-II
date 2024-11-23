@@ -15,32 +15,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:  rgb(55, 30, 70); 
+    background-color: rgb(55, 30, 70); 
     color: white;
     padding: 15px;
     font-size: 20px;
-}
 
-header .left {
-    font-weight: bold;
-}
+    .left {
+        font-weight: bold;
+        
+        t1 {
+            margin-left: 20px;
+        }
+    }
 
-.left t1{
-    margin-left: 20px;
-}
+    .right {
+        display: flex;
+        align-items: center;
 
-header .right {
-    display: flex;
-    align-items: center;
+        img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
 }
-
-header .right img {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 
 /* Main content styling */
 .content {
@@ -53,7 +52,6 @@ header .right img {
     max-width: 1200px;
 }
 
-
 .form-container {
     background-color: white;
     padding: 30px;
@@ -62,73 +60,73 @@ header .right img {
     width: 50%; 
     max-width: 600px; 
     text-align: center;
-}
 
-.form-container h2 {
-    margin-top: 0;
-    color:  rgb(55, 30, 70); 
-}
+    h2 {
+        margin-top: 0;
+        color: rgb(55, 30, 70); 
+    }
 
-.form-container .subtitle {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
+    .subtitle {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
 
-.form-container label {
-    display: block;
-    margin-top: 15px;
-    color: #333;
-    font-weight: bold;
-}
+    label {
+        display: block;
+        margin-top: 15px;
+        color: #333;
+        font-weight: bold;
+    }
 
-.form-container input,
-.form-container textarea {
-    width: 100%;
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
+    input,
+    textarea {
+        width: 100%;
+        margin-top: 5px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
 
-.form-container textarea {
-    resize: none;
-    height: 100px; 
-}
+    textarea {
+        resize: none;
+        height: 100px; 
+    }
 
-.form-container .buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
 
-.form-container .cancel {
-    background-color: #ccc;
-    color: #333;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-}
+        .cancel {
+            background-color: #ccc;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
 
-.form-container .submit {
-    background-color:  rgb(55, 30, 70); 
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-}
+            &:hover {
+                background-color: #aaa;
+            }
+        }
 
-.form-container .cancel:hover {
-    background-color: #aaa;
-}
+        .submit {
+            background-color: rgb(55, 30, 70); 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
 
-.form-container .submit:hover {
-    background-color: #4b004b;
+            &:hover {
+                background-color: #4b004b;
+            }
+        }
+    }
 }
 
 /* Info box */
@@ -162,17 +160,17 @@ header .right img {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-}
 
-.dropdown-menu a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    font-weight: bold;
-}
+    a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        font-weight: bold;
 
-.dropdown-menu a:hover {
-    background-color: rgba(55, 30, 70, 0.1);
+        &:hover {
+            background-color: rgba(55, 30, 70, 0.1);
+        }
+    }
 }

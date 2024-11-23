@@ -12,8 +12,8 @@
             ST-UACH
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <div class="dropdown-menu" id="menu">
-                <a href="cambio_horario_t.php">Cambiar disponibilidad de horario</a>
-                <a href="revision_evaluaciones.php">Revisión de evaluaciones</a>
+                <a href="./tutor/propiedades/cambio_horario_t.php">Cambiar disponibilidad de horario</a>
+                <a href="./tutor/propiedades/revision_evaluaciones.php">Revisión de evaluaciones</a>
                 <a href="#">Evaluar sesión de tutoría</a>
             </div>
         </div>

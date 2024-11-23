@@ -14,14 +14,17 @@
 <body>
     <header>
         <div class="left">ST-UACH</div>
-        <div class="right">TUTOR</div>
+        <div class="right">
+            <span>Apellido Nombre</span>
+            <img src="src/Escudo_UACH.png" alt="Menú">
+        </div>
     </header>
 
     <div class="container">
         <ul class="options">
-            <li><a href="#">Solicitar tutoría</a></li>
-            <li><a href="cambio_tutor.php">Solicitar cambio de tutor</a></li> 
-            <li><a href="#">Agenda</a></li>
+            <li><a href="./tutor/propiedades/cambio_horario_t.php">Cambiar disponibilidad de horario</a></li>
+            <li><a href="./tutor/propiedades/revision_evaluaciones.php">Revisión de evaluaciones</a></li> 
+            <li><a href="./tutor/propiedades/agenda_tutor.php">Agenda</a></li>
             <li><a href="#">Evaluar sesión de tutoría</a></li>
         </ul>
     </div>
