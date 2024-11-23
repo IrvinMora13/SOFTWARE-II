@@ -46,6 +46,17 @@
           $_SESSION["rol"] = $usuario['rol_id'];
           $_SESSION["login"] = true;
           var_dump($_SESSION);
+          if ($_SESSION["rol"] === "1") {
+            header("Location: /alumno");
+          }
+
+          if ($_SESSION["rol"] === "2") {
+            header("Location: /tutor");
+          }
+
+          if ($_SESSION["rol"] === "3") {
+            header("Location: /admin");
+          }
 
         } else {
           $errores[] = "El password es incorrecto";
