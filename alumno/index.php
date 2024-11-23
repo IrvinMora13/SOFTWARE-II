@@ -6,17 +6,11 @@
     if (!$auth) {
         header('Location: /');
     }
+
+    incluirTemplate('header');
 ?>
 
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ST-UACH</title>
-    <link rel="stylesheet" href="src/scss/alumno_ini.css">
-</head>
 <body>
     <header>
         <div class="left">ST-UACH</div>
