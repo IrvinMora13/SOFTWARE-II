@@ -25,6 +25,10 @@ header .left {
     font-weight: bold;
 }
 
+.left t1{
+    margin-left: 20px;
+}
+
 header .right {
     display: flex;
     align-items: center;

@@ -19,7 +19,7 @@
         <ul class="options">
             <li><a href="solicitud_tutoria.php">Solicitar tutoría</a></li>
             <li><a href="cambio_tutor.php">Solicitar cambio de tutor</a></li> 
-            <li><a href="#">Agenda</a></li>
+            <li><a href="agenda_alumno.php">Agenda</a></li>
             <li><a href="#">Evaluar sesión de tutoría</a></li>
         </ul>
     </div>

@@ -9,11 +9,11 @@
 <body>
     <header>
         <div class="left">
-            ST-UACH
+        <t1>ST-UACH</t1>
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <div class="dropdown-menu" id="menu">
                 <a href="solicitud_tutoria.php">Solicitar tutoría</a>
-                <a href="#">Agenda</a>
+                <a href="agenda_alumno.php">Agenda</a>
                 <a href="#">Evaluar sesión de tutoría</a>
             </div>
         </div>
