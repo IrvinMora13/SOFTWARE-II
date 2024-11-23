@@ -1,46 +1,9 @@
 
 
 <?php
+ require 'includes/funciones.php';
 
-  require './db/config/db.php';
-  require './scripts/funciones.php'; 
-  incluirComponent('head');
-
-  $servername = "localhost";
-  $username = "root";
-  $password = "24282213Mys.";
-  $dbname = "stuach";
-
-  $conn = conectDB($servername, $username, $password,$dbname);
-
-  //Arreglo de errores
-
-  $errores = [];
-
-  //Validar envio de formulario
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $id = $_POST["username"];
-    $password = $_POST["password"];
-
-     
-
-    $stmt = $conn->prepare("SELECT * FROM usuarios WHERE id = ? AND password = ?");
-    $stmt->bind_param("ss", $id, $password);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    
-    if ($result->num_rows > 0) {
-      while ($row = $result->fetch_assoc()) {
-        echo "ID: " . $row["id"] . "<br>";
-        echo "Password: " . $row["password"] . "<br>";
-        echo "Rol: " . $row["rol"] . "<br>";
-
-      }
-    } else {
-      echo "No se encontraron resultados";
-    }
-  }
-
+ incluirTemplate('header');
 ?>
 
 <body>
