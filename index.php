@@ -9,8 +9,8 @@
   incluirTemplate('header');
   
   $username = '';
-  $password = '111111';
-  $password_hash = password_hash($password, PASSWORD_BCRYPT);
+  $password = '';
+  
 
 
   $errores = [];
@@ -18,7 +18,7 @@
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = filter_var($_POST['username'], FILTER_VALIDATE_INT);
     $password = $_POST['password'];
-
+    $password_hash = password_hash($password, PASSWORD_BCRYPT);
 
     if (!$username) {
       $errores[] = "Matricula incorrecta";
@@ -38,9 +38,15 @@
         $usuario = mysqli_fetch_assoc($resultado);
 
         $auth = password_verify($password, $usuario['contra']);
-        echo $auth;
+        
         if ($auth) {
-          echo "Todo bien";
+          session_start();
+
+          $_SESSION["usuario"] = $usuario["nombre_completo"];
+          $_SESSION["rol"] = $usuario['rol_id'];
+          $_SESSION["login"] = true;
+          var_dump($_SESSION);
+
         } else {
           $errores[] = "El password es incorrecto";
         }

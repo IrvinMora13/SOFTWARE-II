@@ -36,7 +36,7 @@
       
       $query = "INSERT INTO usuarios (matricula, contra, nombre_completo, rol_id) VALUES ('$username', '$password_hash', '$nombre', '$rol')";
       $resultado = mysqli_query($db, $query);
-
+    
     }
   }
 
