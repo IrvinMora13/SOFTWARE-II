@@ -18,3 +18,11 @@ En el directorio inludes/config/database.php modificar a las credenciales de tu 
     $db = mysqli_connect('localhost o direccion IP', 'usuario', 'Contraseña', 'nombres_base_de_datos');
 ```
 
+## 3 Ejecutar el servidor PHP
+
+```
+php -S localhost:8000
+```
+
+## 4 agregar usuarios
+Ingresar a http://localhost:8000/adduser.php
