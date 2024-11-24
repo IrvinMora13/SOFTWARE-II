@@ -42,9 +42,10 @@
         if ($auth) {
           session_start();
 
-          $_SESSION["usuario"] = $usuario["nombre_completo"];
+          $_SESSION["nombre"] = $usuario["nombre_completo"];
           $_SESSION["rol"] = $usuario['rol_id'];
           $_SESSION["login"] = true;
+          
           var_dump($_SESSION);
           if ($_SESSION["rol"] === "1") {
             header("Location: /alumno");

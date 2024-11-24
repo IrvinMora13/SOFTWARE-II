@@ -5,7 +5,7 @@
     }
 
     $auth = $_SESSION["login"] ?? null;
-
+    
 ?>
 
 
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="right">
-            <span>Apellido Nombre</span>
+            <span><?php echo isset($_SESSION['nombre']) ? htmlspecialchars($_SESSION['nombre']) : 'Usuario Anónimo'; ?></span>
             <img src="src/Escudo_UACH.png" alt="Menú">
         </div>
     </header>
