@@ -11,28 +11,13 @@
 ?>
 
 <body>
-    <header>
-        <div class="left">
-            ST-UACH
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="dropdown-menu" id="menu">
-                <a href="./tutor/propiedades/cambio_horario_t.php">Cambiar disponibilidad de horario</a>
-                <a href="./tutor/propiedades/revision_evaluaciones.php">Revisión de evaluaciones</a>
-                <a href="#">Evaluar sesión de tutoría</a>
-            </div>
-        </div>
-        <div class="right">
-            <span>Apellido Nombre</span>
-            <img src="src/Escudo_UACH.png" alt="Menú">
-        </div>
-    </header>
 
-    <div class="content">
+    <div class="content_tutor">
         <h1>Agenda</h1>
-        <div class="week">
+        <div class="week_tutor">
             <span>Semana 22 - 26 Abril 2024</span>
         </div>
-        <div class="calendar">
+        <div class="calendar_tutor">
             <?php
             // Simulación de datos obtenidos de la base de datos
             $reuniones = [

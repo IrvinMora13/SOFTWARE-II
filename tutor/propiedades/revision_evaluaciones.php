@@ -11,55 +11,20 @@
 ?>
 
 <body>
-    <header>
-        <div class="left">
-            ST-UACH
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="dropdown-menu" id="menu">
-                <a href="cambio_horario_t.php">Cambiar disponibilidad de horario</a>
-                <a href="agenda_tutor.php">Agenda</a>
-                <a href="#">Evaluar sesión de tutoría</a>
-            </div>
-        </div>
-        <div class="right">
-            <span>Apellido Nombre</span>
-            <img src="src/Escudo_UACH.png" alt="Menú">
-        </div>
-    </header>
-
-    <div class="content">
-        <h1>Agenda</h1>
-        <div class="week">
-            <span>Semana 22 - 26 Abril 2024</span>
-        </div>
-        <div class="calendar">
-            <?php
-            // Simulación de datos obtenidos de la base de datos
-            $reuniones = [
-                ['dia' => 'Lunes', 'hora' => '9:00 AM - 10:00 AM', 'tutor' => 'Jane Doe'],
-                ['dia' => 'Martes', 'hora' => '9:00 AM - 10:00 AM', 'tutor' => 'Jane Doe'],
-                ['dia' => 'Miércoles', 'hora' => '9:00 AM - 10:00 AM', 'tutor' => 'Jane Doe'],
-                ['dia' => 'Jueves', 'hora' => '9:00 AM - 10:00 AM', 'tutor' => 'Jane Doe'],
-                ['dia' => 'Viernes', 'hora' => '9:00 AM - 10:00 AM', 'tutor' => 'Jane Doe'],
-            ];
-
-            foreach ($reuniones as $reunion) {
-                echo "
-                <div class='card'>
-                    <h2>{$reunion['dia']}</h2>
-                    <p>{$reunion['hora']}</p>
-                    <p>{$reunion['tutor']}</p>
-                </div>
-                ";
-            }
-            ?>
+    <div class="content_eva">
+        <h1>Evaluaciones</h1>
+        <div class="container_eva"> 
+            <h2>Título del Contenedor 1</h2> 
+            <p>Este es el texto dentro del primer contenedor. Puedes agregar más texto o modificar este según tus necesidades.</p>
+        </div> 
+        <div class="container_eva"> 
+            <h2>Título del Contenedor 2</h2> 
+            <p>Este es el texto dentro del segundo contenedor. Aquí también puedes ajustar el contenido como desees.</p> 
+        </div> 
+        <div class="container_eva"> 
+            <h2>Título del Contenedor 3</h2> 
+            <p>Este es el texto dentro del tercer contenedor. Modifica o expande el texto según tus necesidades.</p>
         </div>
     </div>
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
 </body>
 </html>

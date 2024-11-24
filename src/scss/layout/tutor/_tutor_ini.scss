@@ -1,0 +1,65 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(55, 30, 70); 
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+header .left {
+    font-weight: bold;
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+}
+
+header .right img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Container and options styling */
+.container_ind {
+    padding: 20px;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li {
+    margin: 10px 0;
+}
+
+.options a {
+    text-decoration: none;
+    color: rgb(55, 30, 70); 
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border: 2px solid rgb(55, 30, 70);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.options a:hover {
+    background-color:rgb(55, 30, 70);
+    color: white;
+}
