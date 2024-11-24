@@ -11,22 +11,6 @@
 ?>
 
 <body>
-    <header>
-        <div class="left">
-        <t1>ST-UACH</t1>
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="dropdown-menu" id="menu">
-                <a href="solicitud_tutoria.php">Solicitar tutoría</a>
-                <a href="agenda_alumno.php">Agenda</a>
-                <a href="#">Evaluar sesión de tutoría</a>
-            </div>
-        </div>
-        <div class="right">
-            <span>Apellido Nombre</span>
-            <img src="src/Escudo_UACH.png" alt="Menú">
-        </div>
-    </header>
-
     <div class="content">
         <div class="form-container">
             <h2>Cambio de tutor</h2>
@@ -38,7 +22,7 @@
                 <label for="nuevo-tutor">Nuevo tutor</label>
                 <input type="text" id="nuevo-tutor" name="nuevo-tutor">
 
-                <label for="razon-cambio">Razón del cambio</label>
+                <label for="razon-cambio">Motivo del cambio</label>
                 <textarea id="razon-cambio" name="razon-cambio"></textarea>
 
                 <div class="buttons">

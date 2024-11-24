@@ -11,21 +11,6 @@
 ?>
 
 <body>
-    <header>
-        <div class="left_agenda">
-            ST-UACH
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="dropdown-menu" id="menu">
-                <a href="solicitud_tutoria.php">Solicitar tutoría</a>
-                <a href="cambio_tutor.php">Cambio de tutor</a>
-                <a href="#">Evaluar sesión de tutoría</a>
-            </div>
-        </div>
-        <div class="right">
-            <span>Apellido Nombre</span>
-            <img src="src/Escudo_UACH.png" alt="Menú">
-        </div>
-    </header>
 
     <div class="content">
         <h1>Agenda</h1>

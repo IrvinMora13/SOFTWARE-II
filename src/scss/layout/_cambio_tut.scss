@@ -130,18 +130,18 @@ header {
 }
 
 /* Info box */
-.info-box {
-    background-color: white;
+.info_box_cam {
+    background-color: rgb(231, 0, 0);
     padding: 15px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 30%; 
+    width: 30%;
     max-width: 300px;
     text-align: center;
     color: #333;
     font-size: 14px;
     line-height: 1.5;
-}
+  }
 
 .menu-icon {
     font-size: 24px;

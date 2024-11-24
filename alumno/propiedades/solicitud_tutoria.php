@@ -11,10 +11,10 @@
 ?>
 
 <body>
-    <div class="content_soli">
-        <div class="form-container_soli">
+    <div class="content">
+        <div class="form-container">
             <h2>Solicitud de tutoría</h2>
-            <p class="subtitle_soli">Rellena el formulario</p>
+            <p class="subtitle">Rellena el formulario</p>
             <form>
                 <label for="motivo-tutoria">Motivo de la tutoría</label>
                 <textarea id="motivo-tutoria" name="motivo-tutoria"></textarea>
@@ -38,7 +38,7 @@
             </form>
         </div>
 
-        <div class="info-box_soli">
+        <div class="info-box">
             <p>La solicitud de tutoría será enviada y estará a la espera de confirmación del tutor.</p>
         </div>
     </div>
