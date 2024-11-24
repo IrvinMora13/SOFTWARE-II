@@ -12,12 +12,12 @@
 
 <body>
 
-    <div class="content">
+    <div class="content_age">
         <h1>Agenda</h1>
-        <div class="week">
+        <div class="week_age">
             <span>Semana 22 - 26 Abril 2024</span>
         </div>
-        <div class="calendar">
+        <div class="calendar_age">
             <?php
             // Simulación de datos obtenidos de la base de datos
             $reuniones = [

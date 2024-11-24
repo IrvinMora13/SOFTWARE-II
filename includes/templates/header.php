@@ -22,7 +22,7 @@
 <body>
     <header>
         <?php if($auth): ?>
-            <a href="/cerrar_sesion.php" class= "cerrar_sesion">Cerrar Sesion</a>
+            <a href="/cerrar_sesion.php" class= "cerrar_sesion">Cerrar Sesión</a>
         <?php endif ?>
         <div class="left">
         <t1>ST-UACH</t1>

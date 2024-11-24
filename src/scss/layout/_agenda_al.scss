@@ -1,18 +1,19 @@
 /* Content styling */
-.content {
+.content_age {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 0 auto;
 }
 
-.content h1 {
+.content_age h1 {
     text-align: center;
     color: rgb(55, 30, 70);
     margin-bottom: 10px;
 }
 
-.week {
-    background-color: #d80f0f;
+.week_age {
+    background-color: #fffcfca6;
     padding: 10px 15px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -22,7 +23,7 @@
     font-weight: bold;
 }
 
-.calendar {
+.calendar_age {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
