@@ -14,17 +14,23 @@
     <div class="content_eva">
         <h1>Evaluaciones</h1>
         <div class="container_eva"> 
-            <h2>Título del Contenedor 1</h2> 
-            <p>Este es el texto dentro del primer contenedor. Puedes agregar más texto o modificar este según tus necesidades.</p>
+            <h2>Nombre Alumno 1</h2> 
+            <p>Retroalimentación...</p>
         </div> 
         <div class="container_eva"> 
-            <h2>Título del Contenedor 2</h2> 
-            <p>Este es el texto dentro del segundo contenedor. Aquí también puedes ajustar el contenido como desees.</p> 
+            <h2>Nombre alumno 2</h2> 
+            <p>Retroalimentación...</p> 
         </div> 
         <div class="container_eva"> 
-            <h2>Título del Contenedor 3</h2> 
-            <p>Este es el texto dentro del tercer contenedor. Modifica o expande el texto según tus necesidades.</p>
+            <h2>Nombre alumno 3</h2> 
+            <p>Retroalimentación...</p>
         </div>
     </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </body>
 </html>
