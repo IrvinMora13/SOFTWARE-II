@@ -1385,24 +1385,28 @@ body {
   align-items: center;
 }
 
-/* Header styling */
+/* Header styling  este es*/
 header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   background-color: rgb(55, 30, 70);
   color: white;
   padding: 15px;
   font-size: 20px;
 }
 header .left {
+  align-items: left;
   font-weight: bold;
 }
 header .left t1 {
+  text-align: left;
   margin-left: 20px;
+  color: rgb(255, 255, 255);
 }
 header .right {
+  align-items: left;
   display: flex;
   align-items: center;
 }
@@ -1411,6 +1415,10 @@ header .right img {
   height: 40px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.cerrar_sesion{
+  color:white;
 }
 
 /* Main content styling */
