@@ -1,15 +1,6 @@
-/* General body styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-/* Header styling */
+/* General body styling 
+Header styling 
 header {
     width: 100%;
     display: flex;
@@ -21,12 +12,9 @@ header {
     font-size: 20px;
 }
 
+
 header .left {
     font-weight: bold;
-}
-
-.left t1{
-    margin-left: 20px;
 }
 
 header .right {
@@ -40,19 +28,32 @@ header .right img {
     margin-left: 10px;
     margin-right: 10px;
 }
+    */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* Main content styling */
-.content {
+.content_soli {
     margin-top: 20px;
+    background-color: rgb(255, 255, 255);
     display: flex; 
-    justify-content: center; 
+    justify-content: right; 
     align-items: flex-start; 
     gap: 20px; 
     width: 100%;
     max-width: 1200px;
 }
 
-.form-container {
+.form-container_soli {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
@@ -62,26 +63,27 @@ header .right img {
     text-align: center;
 }
 
-.form-container h2 {
+.form-container_soli h2 {
     margin-top: 0;
-    color: rgb(55, 30, 70); 
+    color: #333;
+    
 }
 
-.form-container .subtitle {
+.form-container_soli .subtitle_soli {
     color: #666;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
-.form-container label {
+.form-container_soli label {
     display: block;
     margin-top: 15px;
     color: #333;
     font-weight: bold;
 }
 
-.form-container input,
-.form-container textarea {
+.form-container_soli input,
+.form-container_soli textarea {
     width: 100%;
     margin-top: 5px;
     padding: 10px;
@@ -90,18 +92,18 @@ header .right img {
     font-size: 14px;
 }
 
-.form-container textarea {
+.form-container_soli textarea {
     resize: none;
     height: 150px; 
 }
 
-.form-container .buttons {
+.form-container_soli .buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.form-container .cancel {
+.form-container_solo .cancel {
     background-color: #ccc;
     color: #333;
     padding: 10px 20px;
