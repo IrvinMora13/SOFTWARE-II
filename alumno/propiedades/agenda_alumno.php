@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda de Tutorías</title>
-    <link rel="stylesheet" href="src/scss/agenda_al.css">
-</head>
+<?php
+    require "../../includes/funciones.php";
+
+    $auth = estaAutenticado();
+
+    if (!$auth) {
+        header('Location: /');
+    }
+
+    incluirTemplate('header');
+?>
+
 <body>
     <header>
         <div class="left">
