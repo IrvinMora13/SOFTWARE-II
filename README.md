@@ -1,6 +1,6 @@
 # St UACH
 # Programos utilizados
-- Mysql o cualquier base de datos
+- Mysql 
 - Node.js
 - PHP
 # Pasos para realizar la ejecucion

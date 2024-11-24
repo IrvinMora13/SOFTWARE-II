@@ -12,11 +12,6 @@
 
 
 <body>
-    <header>
-        <div class="left">ST-UACH</div>
-        <div class="right">Nombre</div>
-    </header>
-
     <div class="container">
         <ul class="options">
             <li><a href="./alumno/propiedades/solicitud_tutoria.php">Solicitar tutoría</a></li>

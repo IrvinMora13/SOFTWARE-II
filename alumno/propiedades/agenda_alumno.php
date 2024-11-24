@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="left">
+        <div class="left_agenda">
             ST-UACH
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <div class="dropdown-menu" id="menu">
