@@ -36,24 +36,21 @@ h2 {
 
 .rating_eva {
     margin-top: 15px;
+    font-size: 16px;
 }
 
-.stars {
-    display: flex;
-    gap: 5px;
-    margin: 5px 0;
-}
-
-.stars span {
-    font-size: 24px;
-    color: black;
-    cursor: pointer;
-}
-
-.legend {
-    display: flex;
-    justify-content: space-between;
+.rating_eva select {
+    width: 100%;
+    padding: 10px;
     font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.rating_eva select:focus {
+    border-color: #4b004b;
+    outline: none;
 }
 
 .comments {
@@ -71,4 +68,28 @@ textarea {
 textarea:focus {
     outline: none;
     border-color: #4b004b;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit {
+    background-color: #4b004b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

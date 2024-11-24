@@ -26,17 +26,10 @@
         <?php endif ?>
         <div class="left">
         <t1>ST-UACH</t1>
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="dropdown-menu" id="menu">
-                <a href="./tutor/propiedades/revision_evaluaciones.php">Revisión de evaluaciones</a>
-                <a href="./tutor/propiedades/agenda_tutor.php">Agenda</a>
-                <a href="#">Evaluar sesión de tutoría</a>
-            </div>
         </div>
-        <div class="right">
+        <div class="right_nombre">
             <span><?php echo isset($_SESSION['nombre']) ? htmlspecialchars($_SESSION['nombre']) : 'Usuario Anónimo'; ?></span>
-            <img src="src/Escudo_UACH.png" alt="Menú">
+            <img src="../../Escudo_UACH.png" alt="">
         </div>
     </header>
-
 </body>
