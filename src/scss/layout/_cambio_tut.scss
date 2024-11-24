@@ -9,37 +9,6 @@ body {
     align-items: center;
 }
 
-/* Header styling */
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(55, 30, 70); 
-    color: white;
-    padding: 15px;
-    font-size: 20px;
-
-    .left {
-        font-weight: bold;
-        
-        t1 {
-            margin-left: 20px;
-        }
-    }
-
-    .right {
-        display: flex;
-        align-items: center;
-
-        img {
-            width: 40px;
-            height: 40px;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-    }
-}
 
 /* Main content styling */
 .content {

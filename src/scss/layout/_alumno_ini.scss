@@ -6,32 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(55, 30, 70); 
-    color: white;
-    padding: 15px;
-    font-size: 20px;
-}
-
-header .left {
-    font-weight: bold;
-}
-
-header .right {
-    display: flex;
-    align-items: center;
-}
-
-header .right img {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
 /* Container and options styling */
 .container {
