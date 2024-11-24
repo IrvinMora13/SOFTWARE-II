@@ -41,7 +41,8 @@
         
         if ($auth) {
           session_start();
-
+          
+          $_SESSION["matricula"] = $usuario["matricula"];
           $_SESSION["nombre"] = $usuario["nombre_completo"];
           $_SESSION["rol"] = $usuario['rol_id'];
           $_SESSION["login"] = true;

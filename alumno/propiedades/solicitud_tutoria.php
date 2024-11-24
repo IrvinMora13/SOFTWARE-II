@@ -1,6 +1,8 @@
 <?php
     require "../../includes/funciones.php";
+    require "../../includes/config/database.php";
 
+    
     $auth = estaAutenticado();
 
     if (!$auth) {
@@ -8,30 +10,50 @@
     }
 
     incluirTemplate('header');
+
+    $db = conectarDB();
+
+    $motivo = '';
+    $fecha = '';
+    $hora = '';
+    $tipo = '';
+
+    $errores = [];
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $motivo = $_POST['motivo-tutoria'];
+        $fecha = $_POST['fecha'];
+        $hora = $_POST['hora'];
+        $tipo = $_POST['tipo-tutoria'];
+
+        
+
+        $matricula = $_SESSION["matricula"];
+
+        if (empty($errores)){
+            $query = "SELECT * FROM asignaciones WHERE estudiante_matricula = '$matricula'";
+            $resultado = mysqli_query($db, $query);
+            
+            $nombre = $_SESSION["nombre"];
+            if ($resultado ->num_rows) {
+                $usuario = mysqli_fetch_assoc($resultado);
+
+                $query2 = "INSERT INTO solicitud_tutorias (id,nombre,motivo,fecha,hora,tipo) VALUES ('$matricula', '$nombre','$motivo', '$fecha', '$hora','$tipo' )";
+                $resultado2 = mysqli_query($db, $query2);
+                if ($resultado2) {
+                    echo "Enviado Correctamente";
+                }
+            }
+        }
+    }
 ?>
 
 <body>
-    <header>
-        <div class="left">
-            <t1>ST-UACH</t1>
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="dropdown-menu" id="menu">
-                <a href="cambio_tutor.php">Cambio de tutor</a>
-                <a href="agenda_alumno.php">Agenda</a>
-                <a href="#">Evaluar sesión de tutoría</a>
-            </div>
-        </div>
-        <div class="right">
-            <span>Apellido Nombre</span>
-            <img src="src/Escudo_UACH.png" alt="Menú">
-        </div>
-    </header>
-
     <div class="content">
         <div class="form-container">
             <h2>Solicitud de tutoría</h2>
             <p class="subtitle">Rellena el formulario</p>
-            <form>
+            <form method="POST">
                 <label for="motivo-tutoria">Motivo de la tutoría</label>
                 <textarea id="motivo-tutoria" name="motivo-tutoria"></textarea>
 
@@ -39,8 +61,8 @@
                 <input type="text" id="horario" name="horario" readonly placeholder="Seleccione fecha y hora">
 
                 <div class="datetime-buttons">
-                    <input type="date" id="fecha" class="date-picker">
-                    <input type="time" id="hora" class="time-picker">
+                    <input type="date" id="fecha" name = "fecha" class="date-picker">
+                    <input type="time" id="hora"  name = "hora" class="time-picker">
                     <button type="button" class="update-datetime" onclick="actualizarHorario()">Actualizar horario</button>
                 </div>
 
