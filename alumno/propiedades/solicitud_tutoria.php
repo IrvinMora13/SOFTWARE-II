@@ -80,7 +80,9 @@
             <p>La solicitud de tutoría será enviada y estará a la espera de confirmación del tutor.</p>
         </div>
     </div>
-
+    <div>
+            <button onclick="goBack()">Ir Atrás</button>
+        </div>
     <script>
         // Función para mostrar/ocultar el menú
         function toggleMenu() {
@@ -99,6 +101,10 @@
             } else {
                 alert('Por favor seleccione una fecha y hora válidas.');
             }
+        }
+
+        function goBack() {
+            window.history.back();
         }
     </script>
 </body>

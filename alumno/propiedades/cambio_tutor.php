@@ -72,10 +72,12 @@
             <p>El cambio de tutor no es seguro<br>ya que dependerá de la disponibilidad del tutor</p>
         </div>
     </div>
+    <div>
+            <button onclick="goBack()">Ir Atrás</button>
+    </div>
     <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        function goBack() {
+            window.history.back();
         }
     </script>
 </body>
