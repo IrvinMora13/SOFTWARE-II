@@ -84,7 +84,7 @@
 
     <form action="./index.php" method="POST">
       <fieldset>
-        <legend>Iniciar sesion</legend>
+        <legend>Iniciar sesión</legend>
         <div class="form-group">
           <label for="username">Matricula:</label>
           <input type="text" id="username" name="username" class="form-control" placeholder="Matricula sin a" required>
