@@ -28,7 +28,7 @@
         <t1>ST-UACH</t1>
         </div>
         <div class="right_nombre">
-            <span><?php echo isset($_SESSION['nombre']) ? htmlspecialchars($_SESSION['nombre']) : 'Usuario Anónimo'; ?></span>
+            <span><?php echo isset($_SESSION['nombre']) ? htmlspecialchars($_SESSION['nombre']) : ' '; ?></span>
             <img src="../../Escudo_UACH.png" alt="">
         </div>
     </header>

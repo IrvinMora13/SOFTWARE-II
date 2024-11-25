@@ -40,10 +40,12 @@
             <p>La solicitud será enviada y estará a la espera de confirmación del departamento de tutorías.</p>
         </div>
     </div>
+    <div>
+            <button onclick="goBack()">Ir Atrás</button>
+    </div>
     <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        function goBack() {
+            window.history.back();
         }
     </script>
 </body>
